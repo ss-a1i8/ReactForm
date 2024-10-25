@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+
 
 const Register_bussiness = () => {
     const [bussinesstype, setType] = useState("");
@@ -26,7 +26,7 @@ const Register_bussiness = () => {
         console.log("Bussiness Based : ", bussinessbased);
         console.log("Bussiness Address : ", bussinessadress);
         console.log("Bussiness Postcode : ", bussinesspostcode);
-        navigate("/");
+        navigate("/login");
         alert("Registration Sucessfull. Please Log in.");
 
     };

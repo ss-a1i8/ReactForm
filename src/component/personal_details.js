@@ -16,7 +16,7 @@ const Register_personal = () => {
         console.log("Last Name:", lname);
         console.log("Gender:", gender);
         console.log("Date of Birth:", dob);
-        navigate("/signup-login-info");
+        navigate("/register-login-info");
     };
 
     return (
@@ -58,7 +58,7 @@ const Register_personal = () => {
             <div className="link-container">
                 <p>
                     Already have an account?
-                    <Link to="/" className="link"> Login</Link>
+                    <Link to="/login" className="link"> Login</Link>
                 </p>
             </div>
         </div>

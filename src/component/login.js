@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -8,21 +7,22 @@ const Login = () => {
     const [password2, setPassword2] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
 
-    const navigate = useNavigate();
-
     const handleLogin = (e) => {
         e.preventDefault();
+        if (password.length < 8) {
+            alert("Password is too short. It must be at least 8 characters.");
+            return;
+        }
         if (password !== password2) {
             alert("Passwords do not match. Please try again.");
             return;
         } else {
             alert("Welcome!");
+            console.log("Email:", email);
+            console.log("Password:", password);
+            console.log("Re-Password:", password2);
+            console.log("Phone Number:", phoneNumber);
         }
-
-        console.log("Email:", email);
-        console.log("Password:", password);
-        console.log("Re-Password:", password2);
-        console.log("Phone Number:", phoneNumber);
     };
 
     return (
@@ -62,7 +62,7 @@ const Login = () => {
             <div className="link-container">
                 <p>
                     Don't have an account?
-                    <Link to="/signup-personal-details" className="link"> Sign Up</Link>
+                    <Link to="/register-personal-details" className="link"> Sign Up</Link>
                 </p>
             </div>
         </div>

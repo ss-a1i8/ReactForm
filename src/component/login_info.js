@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
+
 
 const Register_login = () => {
     const [email, setEmail] = useState("");
@@ -14,17 +14,22 @@ const Register_login = () => {
 
     const handleRegister = (e) => {
         e.preventDefault();
+        if (password.length < 8) {
+            alert("Password is too short. It must be at least 8 characters.");
+            return;
+        }
         if (password !== password2) {
             alert("Passwords do not match. Please try again.");
             return;
-        }
+        } else {
+            console.log("Email:", email);
+            console.log("Password:", password);
+            console.log("Phone Number:", phoneNumber);
+            console.log("Gender:", gender);
+            console.log("Date of Birth:", dob);
+            navigate("/register-bussiness-info");
 
-        console.log("Email:", email);
-        console.log("Password:", password);
-        console.log("Phone Number:", phoneNumber);
-        console.log("Gender:", gender);
-        console.log("Date of Birth:", dob);
-        navigate("/signup-bussiness-info");
+        }
     };
 
     return (
