@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [password2, setPassword2] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
+    const navigate = useNavigate();
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -22,6 +23,7 @@ const Login = () => {
             console.log("Password:", password);
             console.log("Re-Password:", password2);
             console.log("Phone Number:", phoneNumber);
+            navigate("/home");
         }
     };
 

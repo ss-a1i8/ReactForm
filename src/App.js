@@ -4,6 +4,8 @@ import Login from "./component/login";
 import Register_personal from "./component/personal_details";
 import Register_login from "./component/login_info";
 import Register_bussiness from "./component/bussiness_info";
+import MainhomePage from "./component/maindashboard";
+import AdminDashboard from "./component/admindashboard";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path="/register-personal-details" element={<Register_personal />} />
         <Route path="/register-login-info" element={<Register_login/>} />
         <Route path="/register-bussiness-info" element={<Register_bussiness/>} />
+        <Route path="/home" element={<MainhomePage/>} />
+        <Route path="/admin-dashboard" element={<AdminDashboard/>} />
       </Routes>
     </BrowserRouter>
   );

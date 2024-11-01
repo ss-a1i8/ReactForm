@@ -108,6 +108,7 @@ body {
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 
@@ -195,4 +196,93 @@ body {
 
 .home-btn:hover {
   background-color: #333;
+}
+
+
+
+/*home page*/
+
+
+
+.home-header {
+  color: #333;
+  padding-top: 40px;
+  text-align: center;
+}
+
+
+.admin-button,
+.home-btn {
+  background-color: #555;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.admin-button:hover,
+.home-btn:hover {
+  background-color: #333;
+}
+
+
+.main-content {
+  padding: 40px 0;
+}
+
+
+.section {
+  max-width: 100rem;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  border: dashed #000000 2px;
+  background-color: rgba(38, 38, 38, 0.256);
+  border-radius: 3rem;
+}
+
+
+
+/*admin dashboard*/
+
+
+
+.dashboard-container {
+  width: 100%;
+  max-width: 100rem;
+  margin: auto;
+}
+
+
+.business-table {
+  width: 100%;
+  border-style: solid;
+  border-radius: 0.8rem;
+  font-family: "Rubik", serif;
+
+}
+
+.business-table thead tr {
+  background-color: #f4f4f400;
+  text-align: left;
+}
+
+.business-table th,
+.business-table td {
+  padding: 18px;
+  border-bottom: 1px dashed #989898;
+}
+
+.delete-cell {
+  text-align: center;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff5c5c;
+  font-size: 23px;
 }
