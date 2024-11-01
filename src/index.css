@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+/*helloe how are you*/
 
 form {
   background-color: #f0f0f0;
@@ -96,10 +96,12 @@ p {
   text-shadow: 0px 0px 1rem rgb(255, 255, 255);
 }
 
+
 .link {
   color: rgb(97, 97, 97);
   text-decoration: underline;
 }
+
 
 body {
   background-image: url('./images/bg.jpg');
@@ -107,6 +109,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 
 .patua-one-regular {
   font-family: "Patua One", serif;
@@ -163,10 +166,12 @@ body {
   width: 15rem;
 }
 
+
 .register-btn:hover {
   background-color: #333;
   transition: 0.3s;
 }
+
 
 .login-btn:hover {
   background-color: #333;
