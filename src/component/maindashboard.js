@@ -1,17 +1,24 @@
 import React from 'react';
+import { Link, useNavigate } from "react-router-dom";
 
 
 const App = () => {
+  const navigate = useNavigate();
   return (
     <div>
-      <button className="home-btn">Home</button>
+      <button 
+        className="logout-btn"
+        onClick={() => navigate("/login")}
+        >
+        Logout
+      </button>
       <header className="header">
         <div className="container">
           <h1 className="home-header">Syeds Company</h1>
           <nav className="nav">
             <button
               className="admin-button"
-              onClick={() => alert("Redirecting to Admin Dashboard")}>
+              onClick={() => navigate("/admin-dashboard")}>
               Admin Dashboard
             </button>
           </nav>
@@ -35,9 +42,9 @@ const App = () => {
             <h2 className="patua-one-regular">Contact Us</h2>
             <p className="rubik-syed">For inquiries, please reach out to us at:</p>
             <p className="rubik-syed">
-              Email: <a href="mailto:info@ourcompany.com" className="link">info@ourcompany.com</a>
+              Email: <a href="mailto:info@ourcompany.com" className="link">info@syedcorp@gmail.com</a>
             </p>
-            <p className="rubik-syed">Phone: +1 234 567 8900</p>
+            <p className="rubik-syed">Phone: 07366612337</p>
           </div>
         </section>
       </main>

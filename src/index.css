@@ -211,8 +211,7 @@ body {
 }
 
 
-.admin-button,
-.home-btn {
+.admin-button {
   background-color: #555;
   color: white;
   padding: 10px 20px;
@@ -220,12 +219,30 @@ body {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  left: 6%;
+  top: 8%;
+  position: absolute;
+}
+
+
+.logout-btn {
+  background-color: #555;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  left: 88%;
+  top: 8%;
+  position: absolute;
 }
 
 
 .admin-button:hover,
-.home-btn:hover {
+.logout-btn:hover {
   background-color: #333;
+  transition: 0.35s;
 }
 
 
